@@ -49,6 +49,8 @@ To test the Rest Endpoint:
 
 `{"data": "AEICGJ8qAQKfAgIBAFoIQRERERERERFfKgIJeAMCJJ8qCAQAAAAAAAAAXyoCCCafAgMSNFZaCDeCgiRjEABfnwMBAAM="}`
 
+![Logo](src/main/resources/rest-pic.png)
+
 To test the Rest Endpoint:
 
 - Open Postman
