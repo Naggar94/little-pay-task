@@ -12,7 +12,6 @@ import jakarta.websocket.OnMessage;
 import jakarta.websocket.OnOpen;
 import jakarta.websocket.Session;
 import jakarta.websocket.server.ServerEndpoint;
-import lombok.RequiredArgsConstructor;
 
 @Component
 @ServerEndpoint(value = "/websocket", configurator = LittlePayWebSocketServerConfig.class)
