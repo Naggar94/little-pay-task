@@ -14,7 +14,7 @@ public class LittlePayServer {
             serverSocket = new ServerSocket(port);
             while (true) {
                 try(Socket socket = serverSocket.accept()){
-                    littlePayClientHandler.run(socket);
+//                    littlePayClientHandler.run(socket);
                 }catch (Exception e){
                     e.printStackTrace();
                 }

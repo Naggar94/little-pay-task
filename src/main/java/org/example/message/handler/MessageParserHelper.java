@@ -53,7 +53,7 @@ public class MessageParserHelper {
                 messageEntity.setKernel(resolveKernel(value));
                 break;
             case  "5A":
-                messageEntity.setCardNumber(resolveCardNumber(value, resolveKernel(value)));
+                messageEntity.setCardNumber(resolveCardNumber(value, messageEntity.getKernel()));
                 break;
             case "9F02":
                 messageEntity.setAmount(resolveAmount(value));

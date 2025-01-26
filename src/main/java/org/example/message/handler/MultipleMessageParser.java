@@ -1,6 +1,7 @@
 package org.example.message.handler;
 
 import org.example.entity.MessageEntity;
+import org.springframework.stereotype.Component;
 
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
@@ -8,12 +9,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import lombok.RequiredArgsConstructor;
+
+@Component
+@RequiredArgsConstructor
 public class MultipleMessageParser {
 
     private static final String START = "02";
     private static final String END = "03";
     private static final int HEADER_LENGTH = 2;
-    private final SingleMessageParser singleMessageParser = new SingleMessageParser();
+    private final SingleMessageParser singleMessageParser;
 
     public Map<String, List<MessageEntity>> parse(String messages){
 
